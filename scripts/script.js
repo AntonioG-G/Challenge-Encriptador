@@ -1,7 +1,8 @@
-var text = document.getElementById("user-text").value;
 
 function encrypting(){
-
+    let text = document.getElementById("user-text").value;
+    
+    console.log(text.value);    
     var encryptedText = text.replace(/e/g, "enter")
                             .replace(/i/g, "imes")
                             .replace(/a/g, "ai")
@@ -15,7 +16,8 @@ function encrypting(){
 }
 
 function decrypting(){
-
+    let text = document.getElementById("user-text").value;
+    
     var encryptedText = text.replace(/enter/g, "e")
                             .replace(/imes/g, "i")
                             .replace(/ai/g, "a")
@@ -44,13 +46,12 @@ var fileInput = document.getElementById("txt-file");
 
 fileInput.addEventListener("change", () => {
     if (fileInput.files.length > 0) {
+
         var reader = new FileReader();
-        
         reader.addEventListener("load", (event) => {
             console.log(reader.result);
-        console.log("reader");
-            text.value = event.target.result;
-            console.log(text.textContent)
+            console.log("reader");
+            document.getElementById("user-text").value = reader.result;
         });
         reader.readAsText(fileInput.files[0]);
     }
