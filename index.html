@@ -12,31 +12,28 @@
 
     <div class="general-container">
 
-        <div class="superior-bar">
-            <h1>1</h1>
-        </div>
+        <nav class="superior-bar">
+            <p>logo alura, logo oracle, logo github con mi perfil</p>
+        </nav>
 
         <div class="content-container">
 
             <div class="uploading-area">
-                <h1>1</h1>
+                <textarea name="user-text" placeholder="Ingresa el texto a encriptar" cols="90" rows="20" minlength="1" maxlength="1000" required pattern="[a-z ]*" oninput="this.value = this.value.replace(/[^a-z\n ]/g, '')"></textarea>
             </div>
 
             <div class="result-area">
-                <h1>1</h1>
+                <p>texto desencriptado</p>
             </div>
 
             <div class="option-area">
-                <h1>1</h1>
-            </div>
-            <h1>1</h1>
-            
+
+                <button onclick="encriptar()">encriptar</button>
+                <button onclick="desencriptar()">desencriptar</button>
+                <button onclick="copiar()">copiar</button>
+
+            </div>            
         </div>
-
-    
-
     </div>
-
 </body>
-
 </html>
