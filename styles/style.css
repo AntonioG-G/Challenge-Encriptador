@@ -28,8 +28,9 @@
     top: 0; 
     grid-area: 1 / 1 / 2 / 2;
 
-    display: flexbox;
+    display: flex;
     justify-content: space-between;
+    
 
 }
 
@@ -72,6 +73,14 @@
 
 #txt-file{
     visibility: hidden;
+}
+
+#logo1,#logo2{
+    align-self: center;
+}
+
+#logo3,#logo4{
+    align-self: center;
 }
 
 @media screen and (max-width: 480px) {
