@@ -19,21 +19,26 @@
         <div class="content-container">
 
             <div class="uploading-area">
-                <textarea name="user-text" placeholder="Ingresa el texto a encriptar" cols="90" rows="20" minlength="1" maxlength="1000" required pattern="[a-z ]*" oninput="this.value = this.value.replace(/[^a-z\n ]/g, '')"></textarea>
+                <textarea id="user-text" placeholder="Ingresa el texto a encriptar" cols="90" rows="20" minlength="1" maxlength="1000" required pattern="[a-z ]*" oninput="this.value = this.value.replace(/[^a-z\n ]/g, '')"></textarea>
+                <!-- <input type="file" id="txt-file" accept=".txt"> -->
+                
             </div>
 
             <div class="result-area">
-                <p>texto desencriptado</p>
+                <p id="resultText">texto desencriptado</p>
+
+                <button onClick="copying()">copiar</button>
             </div>
 
             <div class="option-area">
 
-                <button onclick="encriptar()">encriptar</button>
-                <button onclick="desencriptar()">desencriptar</button>
-                <button onclick="copiar()">copiar</button>
+                <button onClick="encrypting()">encriptar</button>
+                <button onClick="decrypting()">desencriptar</button>
+                <!-- <button onClick="reading()">ingresar .txt</button> -->
 
             </div>            
         </div>
     </div>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
