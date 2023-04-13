@@ -62,6 +62,16 @@
 
 }
 
+.boton-archivo{
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+}
+
+#txt-file{
+    visibility: hidden;
+}
+
 @media screen and (max-width: 480px) {
     #inner {
       width: calc(100% - 80px);

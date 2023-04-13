@@ -1,5 +1,6 @@
+var text = document.getElementById("user-text").value;
+
 function encrypting(){
-    let text = document.getElementById("user-text").value;
 
     var encryptedText = text.replace(/e/g, "enter")
                             .replace(/i/g, "imes")
@@ -15,8 +16,6 @@ function encrypting(){
 
 function decrypting(){
 
-    let text = document.getElementById("user-text").value;
- 
     var encryptedText = text.replace(/enter/g, "e")
                             .replace(/imes/g, "i")
                             .replace(/ai/g, "a")
@@ -40,6 +39,30 @@ function copying(){
      
 }
 
-/* function reading(){
+var fileInput = document.getElementById("txt-file");
 
+
+fileInput.addEventListener("change", () => {
+    if (fileInput.files.length > 0) {
+        var reader = new FileReader();
+        
+        reader.addEventListener("load", (event) => {
+            console.log(reader.result);
+        console.log("reader");
+            text.value = event.target.result;
+            console.log(text.textContent)
+        });
+        reader.readAsText(fileInput.files[0]);
+    }
+});
+
+/* function reading(reader,texto){
+    console.log("caca")
+    reader.addEventListener("load", (event) => {
+        const areaText = event.target.result;
+        texto.textContent = areaText;
+        
+      });
+      reader.readAsText(fileInput.files[0]);
+      
 } */

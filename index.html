@@ -20,7 +20,10 @@
 
             <div class="uploading-area">
                 <textarea id="user-text" placeholder="Ingresa el texto a encriptar" cols="90" rows="20" minlength="1" maxlength="1000" required pattern="[a-z ]*" oninput="this.value = this.value.replace(/[^a-z\n ]/g, '')"></textarea>
-                <!-- <input type="file" id="txt-file" accept=".txt"> -->
+                <br><br>
+                <label for="txt-file" class="boton-archivo">O sube tu archivo txt</label>
+                <input type="file" id="txt-file" class="input" accept=".txt">
+                
                 
             </div>
 
