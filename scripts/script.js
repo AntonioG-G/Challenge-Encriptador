@@ -12,6 +12,15 @@ function encrypting(){
     let result = document.getElementById("resultText");
     result.textContent = encryptedText;
 
+    let div1 = document.getElementById("nr");
+    let div2 = document.getElementById("r");
+
+    div1.style.visibility =  "hidden";
+    div1.style.height =  "20%";
+    div2.style.visibility =  "visible";
+    div2.style.height =  "80%";
+
+
     return encryptedText;
 }
 
@@ -26,6 +35,14 @@ function decrypting(){
     
      let result = document.getElementById("resultText");
     result.textContent = encryptedText;
+
+    let div1 = document.getElementById("nr");
+    let div2 = document.getElementById("r");
+
+    div1.style.visibility =  "hidden";
+    div1.style.height =  "20%";
+    div2.style.visibility =  "visible";
+    div2.style.height =  "80%";
 
     return encryptedText;
 

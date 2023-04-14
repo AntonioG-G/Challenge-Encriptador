@@ -32,7 +32,7 @@
 
             <div class="result-area">
                 
-                <div class="no-result">
+                <div class="no-result" id="nr">
 
                     <div class="gif">
                         <img src="resources/animacion.gif">
@@ -46,9 +46,9 @@
                     
                 </div>
 
-                <div class="result">
+                <div class="result" id="r">
                     
-                    <p id="resultText">texto desencriptado</p>
+                    <textarea id="resultText" disabled>texto desencriptado</textarea>
                     <button onClick="copying()" class="button-config">Copiar</button>
 
                 </div>
@@ -56,7 +56,6 @@
             
 
             <div class="option-area">
-
                 <button onClick="encrypting()" class="button-config" id="en">Encriptar</button>
                 <button onClick="decrypting()" class="button-config">Desencriptar</button>
                 <!-- <button onClick="reading()">ingresar .txt</button> -->
