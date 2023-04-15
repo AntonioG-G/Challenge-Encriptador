@@ -48,15 +48,23 @@ function decrypting(){
 
 }
 
-function copying(){
-
+function copying() {
     let text = document.getElementById("resultText").textContent;
-    console.log(text);
+  
     navigator.clipboard.writeText(text)
-    .then(() => alert("Texto copiado al portapapeles"))
-    .catch(err => alert("Error al copiar el texto: ",err));
-     
-}
+      .then(() => {
+        // Cambiar el color de la sombra de "ra" durante un segundo
+        document.getElementById("ra").style.boxShadow = "0 0 10px 10px rgba(118, 222, 155, 0.5)";
+  
+        // Restablecer el color de la sombra de "ra" después de un segundo
+        setTimeout(() => {
+          document.getElementById("ra").style.boxShadow = "";
+        }, 1000);
+      })
+      .catch(err => alert("Error al copiar el texto: ", err));
+  }
+  
+  
 
 var fileInput = document.getElementById("txt-file");
 

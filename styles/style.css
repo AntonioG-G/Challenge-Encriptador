@@ -11,7 +11,7 @@ a{
 
 button{
     height: 50%;
-    width: 320px;
+    width: 300px;
 }
 
 
@@ -23,15 +23,16 @@ button{
     text-decoration: none;
     color: #000;
     background: #fff;
-    line-height: 3px;
+    line-height: 5px;
     border-radius: 40px;
     margin: auto;
     padding: 20px;
     /* height: 50%; */
     font-size: 30px;
+    font-style: italic;
     font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    box-shadow: #0E305D -2px -2px 0px 2px, #1957A8 0px 0px 0px 4px, #3781E1 0px 0px 2px 7px;
+    font-family: 'Rokkitt', serif;
+    box-shadow: #0E305D -2px -2px 0px 2px, #1957A8 0px 0px 0px 4px, #3781E1 0px 0px 2px 7px, #ededed 0px 0px 7px 12px;
     transition: all 0.2s;
     justify-self: self-end;
                 
@@ -39,7 +40,7 @@ button{
 
 .button-config:hover{
     box-shadow: #3781E1 -2px -2px 0px 2px, #1957A8 0px 0px 0px 4px, #0E305D 0px 0px 2px 7px;
-    transform: scale(1.01);
+    transform: scale(1.1);
 }
 .general-container{
     
@@ -113,7 +114,9 @@ button{
     margin: 10px;
     height: 90%;
     width: 90%;
-    background: #fff;
+    background: #ededed;
+    border: none;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -135,9 +138,9 @@ button{
 }
 
 .info-p{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rokkitt', serif;
     text-align: center;
-    max-width: 90%;
+    max-width: 85%;
     font-size: 20px;
     
 }
@@ -162,7 +165,7 @@ button{
     width: 80%;
     height: 100%;
     
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Rokkitt', serif;
     font-size: 30px;
 }
 
@@ -190,9 +193,11 @@ button{
     resize: none;
     margin: 0 auto;
     background-color: rgba(240, 240, 240, 0.2);
+    border: none;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
     border-style: none;
     color: black;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Rokkitt', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
@@ -202,7 +207,7 @@ button{
 
 #user-text::placeholder{
     color: black;
-    opacity: 60%;
+    opacity: 100%;
 }
 
 #resultText{
@@ -215,7 +220,7 @@ button{
     background-color: rgba(240, 240, 240, 0.2);
     border-style: none;
     color: black;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Rokkitt', serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
